@@ -1,0 +1,14 @@
+/* src/components/AuthWrapper.css */
+
+/* This takes up the entire viewport */
+.auth-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  /* Full page dark background */
+  background-color: #0d111c; 
+  /* The subtle radial gradient glow */
+  background-image: radial-gradient(circle at top, rgba(17, 24, 39, 0.4) 0%, rgba(13, 17, 28, 1) 70%);
+}

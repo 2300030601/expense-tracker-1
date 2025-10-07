@@ -1,5 +1,7 @@
+// src/components/CreateAccountForm.jsx
 import React, { useState } from 'react';
-import './CreateAccountForm.css'; // Make sure this import is correct
+import { Link } from 'react-router-dom'; // Import Link for navigation
+import './CreateAccountForm.css';
 
 const CreateAccountForm = () => {
   const [formData, setFormData] = useState({
@@ -20,7 +22,7 @@ const CreateAccountForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form Submitted:', formData);
-    // Add your validation and API call logic here
+    // Add your account creation logic here
   };
 
   return (
@@ -92,8 +94,9 @@ const CreateAccountForm = () => {
           </button>
         </form>
 
+        {/* The Link back to the Sign In page */}
         <div className="sign-in-link">
-          Already have an account? <a href="/signin">Sign in</a>
+          Already have an account? <Link to="/">Sign in</Link>
         </div>
       </div>
     </div>
